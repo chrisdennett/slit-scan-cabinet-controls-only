@@ -48,7 +48,7 @@ const defaultParams = {
   },
   isReflected: {
     type: "checkbox",
-    value: false,
+    value: true,
   },
   soundOn: {
     type: "checkbox",

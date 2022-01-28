@@ -19,6 +19,7 @@ let scale;
 let mixer;
 let reverb;
 let soundObjects = [];
+let count = 0;
 
 // set up controls, webcam etc
 export function setup() {
@@ -71,7 +72,10 @@ export function draw() {
     drawSlice = true;
   }
 
-  const frameCanvas = getFlippedVideoCanvas(video);
+
+  const frameCanvas = getFlippedVideoCanvas(video, count);
+
+  count += 0.25;
 
   if (isHorizontal.value) {
     drawHorizontalSlitScan(frameCanvas, drawSlice, params);

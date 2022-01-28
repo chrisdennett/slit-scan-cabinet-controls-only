@@ -54,6 +54,7 @@ body {
 
 #textureOverlay {
   /* background-image: url("/img/groovepaper.png"); */
+  /* background-color: red; */
   background-image: url("/img/little-pluses.png");
   opacity: 0.2;
 }
